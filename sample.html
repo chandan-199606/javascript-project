@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web to lead form</title>
+    <link rel="stylesheet" href="sample.css"
+</head>
+<body>   
+    <h1> Create lead</h1>
+    <form
+     action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D2w00000PicEK" method="POST"
+      onsubmit="beforesubmit()">
+    
+    <input type=hidden
+     name="oid"
+      value="00D2w00000PicEK"/>
+      <input type=hidden
+      name="lead_date__c"
+       value="00D2w00000PicEK"
+         class="outputdate"/>
+    <input
+     type=hidden 
+     name="retURL" 
+     value="">
+    
+  
+    
+    <label for="first_name">First Name</label>
+    <input
+      id="first_name" maxlength="40"
+       name="first_name" 
+       size="20"
+        type="text" 
+         required ="true"
+        /><br>
+     
+    <label for="last_name">Last Name</label>
+    <input 
+     id="last_name" maxlength="80" 
+     name="last_name"
+      size="20" 
+      type="text" 
+      required ="true"
+      /><br>
+    
+    <label for="email">Email</label>
+    <input 
+     id="email" maxlength="80"
+      name="email"
+       size="20" 
+       type="text" 
+       required ="true"
+       
+       /><br>
+
+       <label for="lead_date">lead date</label>
+  <input type="date"
+  required ="true"
+  class="inputdate"
+  />
+<!--     
+lead date:<span class="dateInput dateOnlyInput">
+        <input
+          id="00NIg000000i31p" 
+          name="00NIg000000i31p" 
+          size="12" 
+          type="text" /></span><br  -->
+    
+    <input type="submit" name="submit" class="submit">
+    
+    </form>
+    <script src="sample.js"></script>
+</body>
+</html>
